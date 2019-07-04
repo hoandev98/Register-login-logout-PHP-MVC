@@ -1,0 +1,470 @@
+body {
+	font-family: -CenturyGothic;
+	font-size: 15px;
+
+}
+
+#backgroundTop {
+	background: #c2a2cb;
+	height: 35px;
+}
+
+#headerContent {
+	max-width: 960px;
+	min-width: 480px;
+	margin: auto;
+
+	/* position: relative; */
+	display: block;
+}
+
+.icon-top {
+	list-style-type: none;
+	display: inline;
+
+}
+
+#menuTop {
+
+	float: right;
+	display: inline-block;
+}
+
+#menuTop ul {
+	margin-top: 10px;
+}
+
+#menuTop ul li {
+	/* position: relative; */
+	font-family: ariaMT;
+	font-size: 10px;
+	list-style: none;
+	float: left;
+
+}
+
+.menu-sub {
+	position: relative;
+	list-style: none;
+	float: left;
+}
+
+#menuTop ul li a {
+	font-size: 10px;
+	color: #210E0E;
+	text-decoration: none;
+	padding: 5px 25px 0px 0px;
+}
+#menuTop ul li #imageStore1 {
+	display: none;
+}
+#menuTop ul li #imageStore {
+	margin-top: -10px;
+}
+.link-menu{
+	position: relative;
+}
+.submenu-content {
+	display:none;
+	position: absolute;
+	left: -7.85em;
+	min-width: 100px;
+	z-index: 1;
+}
+
+.menu-sub:hover .submenu-content {
+	display: block;
+}
+
+#logo {
+	/* width: 100%; */
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: block;
+	clear: left;
+	position: relative;
+	left: 40%;
+
+}
+
+#menuUpdate {
+
+	min-width: 480px;
+	margin: auto;
+	display: block;
+}
+
+#menuUpdate ul {
+	min-width: 480px
+	margin-left: -40px;
+
+}
+
+#menuUpdate ul li {
+
+	float: left;
+	list-style: none;
+}
+
+#menuUpdate ul li a {
+	color: #240D0D;
+	font-family: CenturyGothic;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0px 10px;
+
+
+}
+
+.box {
+	float: right;
+	background-color: #a78cb6;
+	padding: 10px;
+	margin-top: -30px;
+	margin-right: 1px;
+}
+.bar{
+	display: none;
+}
+#search {
+	background-color: #a78cb6;
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	color: #fff;
+	margin: 10px;
+	width: 150px
+}
+
+#invert{
+    -webkit-filter: invert(100%);
+}
+
+
+main {
+	max-width: 960px;
+	min-width: 480px;
+	margin: auto;
+}
+
+
+#banner {
+	display: inline-block;
+	margin: auto;
+	position: relative;
+/*	max-width: 100%;*/
+}
+
+#banner .img-banner {}
+
+.image-add {
+	display: none;
+	
+}
+
+.image-slide {
+	position: absolute;
+	bottom: 10%;
+	right: 1%;
+}
+
+.image-slide1 {
+	position: absolute;
+	top: 35%;
+}
+
+.image-slide2 {
+	position: absolute;
+	top: 27%;
+	left: -0.2%
+}
+
+#menuSelect {
+		min-width: 480px;
+	background-color: #815d99;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute;
+	bottom: -45px;
+
+}
+
+#menuSelect ul {
+	min-width: 480px;
+	float: left;
+	margin-left: -3.5em;
+}
+
+#menuSelect ul li {
+	float: left;
+	list-style: none;
+	/* margin: auto; */
+
+}
+
+#menuSelect ul li a {
+	color: #fff;
+	font-family: CenturyGothic;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 25px;
+
+
+}
+
+.nyhener {
+	background: #815d99;
+}
+
+.bestse {
+	background: #623580;
+}
+
+.tilbud {
+	background: #a186b3;
+}
+
+.make {
+	background: #c3a5cd;
+}
+
+#listTop {
+	list-style-type: none;
+	display: inline;
+/*margin-top: 5em;*/
+
+}
+.item-Favorter{
+	display: none;
+}
+#listTop ul {
+		min-width: 480px;
+	display: inline-block;
+/*
+	overflow: visible;
+	height: 300px;
+*/
+	margin-top: 100px;
+	margin-left: -3em;
+}
+
+#listTop ul li {
+	float: left;
+	list-style: none;
+	padding: 10px;
+
+}
+
+#listTop ul li #itemTop {
+	/* float: left; */
+	list-style: none;
+	/* padding: 0px 0px 0px 15px; */
+
+}
+
+#listTop ul li #itemTop .item {
+	width: 170px;
+	height: 180px;
+	border: 0.5px solid #F2E8E8;
+	box-shadow: 1px 1px #F2E8E8;
+	/* background: url(/home/hoandeptrai/Desktop/front-end/images/item1.png); */
+}
+
+#listTop ul li #itemTop .heart {
+	float: right;
+}
+
+#listTop ul li #itemTop .item-content {
+	border: 1px solid #F2E8E8;
+	position: relative;
+
+		
+}
+
+#listTop ul li #itemTop .eye {
+/*	float: right;*/
+	
+	position: absolute;
+	right: 0em;
+	top: 5em;
+	
+}
+
+.text-color {
+	color: #834694;
+	font-size: 12px;
+/*	margin-left: 1em;*/
+	
+}
+.top-Content1{
+	color: darkmagenta;
+	margin-left: 1em;
+}
+.top-Content{
+	
+	margin-left: 1em;
+}
+.top-Content-bottom{
+	margin-left: 1em;
+	margin-bottom: 1px;
+
+}
+#itemToplogo{
+	display: none;
+}
+#itemTopmake{
+	display: none;
+}
+#itemTopterm{
+	display: none;
+}
+
+
+#itemTopesta{
+	display: none;
+}
+#listBottom {
+	
+	min=width: 480px;
+	max-width: 960px;
+	margin: auto;
+}
+
+#listBottom ul {
+	/* margin: 20px; */
+	display: inline-block;
+	float: left;
+	margin-left: -3em;
+}
+
+#listBottom ul li {
+
+	float: left;
+	padding: 10px;
+	list-style: none;
+}
+
+
+.item-Bottom {
+	height: 50px;
+	border: 0.5px solid #A9A1A1;
+	background: #b9babd;
+}
+.bottom-Content1{
+	margin-left: 1em;
+}
+.bottom-Content{
+	margin-top: 30px;
+	margin-left: 1em;
+}
+/* 
+.footer {
+    height: 350px;
+    display: block;
+    clear: both;
+}
+
+
+.main-footer {
+    font-size: 10pt;
+    display: block;
+    color: #ffffff;
+    background-image: url(/home/hoandeptrai/Desktop/front-end/images/footer_background.png);
+    background-repeat: repeat-x;
+    margin-top: 100px;
+}
+
+.info {
+    max-width: 960px;
+    margin: auto;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #c9b9d3;
+    display: inline-block;
+    margin-left: 30%;
+
+
+}
+
+.info div {
+    float: left;
+    padding: 5px;
+}
+
+
+.email-fill-out {
+    max-width: 100%;
+    float: left;
+}
+
+
+.facebook-insta-logo {
+    width: 220px;
+    font-size: 13.5px;
+    float: left;
+    margin-left: 5px;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: #c9b9d3;
+}
+
+.facebook-footer {
+    float: left;
+}
+
+.footer-spac {
+   
+}
+
+.footer-space {
+    width: 255px;
+    float: left;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: #c9b9d3;
+}
+
+.
+.payment-logo {
+   max-width: 960px;
+    height: 20px;
+    display: inline;
+   margin: auto;
+   position: relative;
+   left: 50%;
+}
+
+
+.copyright {
+    width: 960px;
+    height: 35px;
+    font-size: 11pt;
+    color: #888888;
+    margin: auto;
+}
+
+ */
+/*
+@media screen and (max-width: 2000px) {}
+
+@media screen and (max-width: 720px) {
+	#listTop ul {
+		width: 300px;
+
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#listBottom ul {
+		width: 300px;
+	}
+}
+
+#allTop #headerContent #menuTop ul li > .sub-menu {
+	display: none;
+}
+
+#allTop #headerContent #menuTop ul li:hover .sub-menu {
+	display: block;
+}
+*/

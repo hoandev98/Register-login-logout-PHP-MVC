@@ -1,0 +1,55 @@
+body {
+	font-family: -CenturyGothic;
+	font-size: 15px;
+
+}
+
+#backgroundTop {
+	background: #c2a2cb;
+	height: 10px;
+}
+#headerContent{
+	display: none;
+}
+#logo{
+	display: block;
+	text-align: center;
+	margin-top: 3.5cm;
+}
+#handlekurv-mobile{
+		margin-top: 30px;
+/*	display: inline-block;*/
+	text-align: center;
+}
+#handlekurv-mobile a{
+
+	text-decoration: none;
+	color: currentColor;
+	font-size: 6.96pt;
+	padding: 5px;
+}
+#handlekurv-mobile img{
+	display: inline;
+position: absolute;
+	top: 250px;
+}
+#menuTop-mobile{
+	margin-top:10px; 
+	text-align: center;
+}
+#menuTop-mobile ul{
+	margin: 0px;
+	padding: 0px;
+}
+#menuTop-mobile ul li{
+display: inline-block;
+
+/*	float: left;*/
+}
+#menuTop-mobile ul li a{
+font-size: 6.12pt;
+	text-decoration: none;
+	color: #201f1f;
+	padding: 0px 2px 0px 2px;
+	
+}
