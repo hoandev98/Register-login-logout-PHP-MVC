@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('model/m_user.php');
+include('/model/m_user.php');
 
 class C_user{
 	function registerAccount($firstname, $lastname, $email, $password){
