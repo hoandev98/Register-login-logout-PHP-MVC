@@ -1,5 +1,5 @@
 <?php
-include('/opt/lampp/htdocs/oop-mvc/controller/c_user.php');
+include('controller/c_user.php');
 $c_user = new C_user();
 if(isset($_POST['login'])){
 	$email = $_POST['email'];
