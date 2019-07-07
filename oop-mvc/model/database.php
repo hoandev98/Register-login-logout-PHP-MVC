@@ -8,15 +8,15 @@ class database{
 		$username = "root";
 		$password = "";
 
-		try {
+	try {
     $this->_dbh = new PDO("mysql:host=$servername;dbname=oop-mvc", $username, $password);
     // set the PDO error mode to exception
     $this->_dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
-    }
-catch(PDOException $e){
-    echo "Connection failed: " . $e->getMessage();
-    }
+		echo "Connected successfully";
+		}
+	catch(PDOException $e){
+    	echo "Connection failed: " . $e->getMessage();
+    	}
 	}
 	//
 	public function setQuery($sql){
@@ -60,5 +60,6 @@ catch(PDOException $e){
 	public function getlastId(){
 		return $this-> _dbh->lastInsertId();
 	}
+	
 }
 ?>

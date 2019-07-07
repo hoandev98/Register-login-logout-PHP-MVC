@@ -11,10 +11,11 @@ if(isset($_POST['login'])){
 <html lang="en">
 
 <head>
-	<title>Login</title>
+	<title>Form User Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -89,8 +90,17 @@ if(isset($_POST['login'])){
 								Don’t have an account?
 							</span>
 
-							<a href="register.php" class="txt2">
-								Sign up
+							<a class="txt2" href="register.php">Sign up
+							</a>
+						</li>
+						<li>
+							<span class="txt1">
+								You are Admin?
+							</span>
+							<a class="txt2" href="loginAdmin.php">LoginAdmin / 
+							</a>
+
+							<a class="txt2" href="registerAdmin.php">SignupAdmin
 							</a>
 						</li>
 					</ul>
@@ -98,6 +108,8 @@ if(isset($_POST['login'])){
 			</div>
 		</div>
 	</div>
+
+
 
 
 	<div id="dropDownSelect1"></div>
@@ -118,6 +130,7 @@ if(isset($_POST['login'])){
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
 
 </body>
 

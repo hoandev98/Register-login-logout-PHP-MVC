@@ -1,21 +1,17 @@
 <?php
-include('/opt/lampp/htdocs/oop-mvc/controller/c_user.php');
-$c_user = new C_user();
-if(isset($_POST['singup'])){
-	$firstname = $_POST['firstname'];
-	$lastname = $_POST['lastname'];
-	$email = $_POST['email'];
-	$password = $_POST['password'];
-	$repassword = $_POST['repassword'];
-	if($password == $repassword){
-		$user = $c_user->registerAccount($firstname, $lastname, $email, $password);
-	}	
+include('/opt/lampp/htdocs/oop-mvc/controller/c_admin.php');
+$c_admin = new C_admin();
+if(isset($_POST['loginAdmin'])){
+	$ad_email = $_POST['ad_email'];
+	$ad_password = $_POST['ad_password'];
+	$admin = $c_admin->loginAccount($ad_email, $ad_password);
 }
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Form User Registration</title>
+	<title>Form User Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -44,80 +40,88 @@ if(isset($_POST['singup'])){
 </head>
 
 <body>
+
 	<div class="limiter">
 		<div class="col-md-4">
 			<?php
-		 if(isset($_SESSION['error'])){
-			 echo"<div class = 'alert alert-danger'>".$_SESSION['error']."</div>";
-		 } 
-		 ?></div>
+			if(isset($_SESSION['user_error'])){
+				echo"<div class='alert alert-danger'>".($_SESSION['user_error'])."</div>";
+			}
+			?></div>
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-85 p-b-20">
 				<form method="POST" action="#" class="login100-form validate-form">
 					<span class="login100-form-title p-b-70">
-						Welcome Register
+						Welcome Admin
 					</span>
 					<span class="login100-form-avatar">
 						<img src="images/avatar-01.jpg" alt="AVATAR">
 					</span>
 
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter firstname">
-						<input class="input100" type="text" name="firstname">
-						<span class="focus-input100" data-placeholder="firstname"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter lastname">
-						<input class="input100" type="text" name="lastname">
-						<span class="focus-input100" data-placeholder="lastname"></span>
-					</div>
-
-
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter email">
-						<input class="input100" type="text" name="email">
-						<span class="focus-input100" data-placeholder="email"></span>
+						<input class="input100" type="text" name="ad_email">
+						<span class="focus-input100" data-placeholder="Email"></span>
 					</div>
-
 
 					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
-						<input class="input100" type="password" name="password">
-						<span class="focus-input100" data-placeholder="password"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter repassword">
-						<input class="input100" type="password" name="repassword">
-						<span class="focus-input100" data-placeholder="repassword"></span>
+						<input class="input100" type="password" name="ad_password">
+						<span class="focus-input100" data-placeholder="Password"></span>
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button type="submit" name="singup" class="login100-form-btn">
-							Register
+						<button type="submit" name="loginAdmin" class="login100-form-btn">
+							Login
 						</button>
-
 					</div>
 
+					<ul class="login-more p-t-190">
+						<li class="m-b-8">
+							<span class="txt1">
+								Forgot
+							</span>
+
+							<a href="#" class="txt2">
+								Email / Password?
+							</a>
+						</li>
+
+						<li>
+							<span class="txt1">
+								Don’t have an account Admin?
+							</span>
+
+
+							<a class="txt2" href="registerAdmin.php">SignupAdmin
+							</a>
+						</li>
+					</ul>
 				</form>
 			</div>
-
-			<div id="dropDownSelect1"></div>
-
-			<!--===============================================================================================-->
-			<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-			<!--===============================================================================================-->
-			<script src="vendor/animsition/js/animsition.min.js"></script>
-			<!--===============================================================================================-->
-			<script src="vendor/bootstrap/js/popper.js"></script>
-			<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-			<!--===============================================================================================-->
-			<script src="vendor/select2/select2.min.js"></script>
-			<!--===============================================================================================-->
-			<script src="vendor/daterangepicker/moment.min.js"></script>
-			<script src="vendor/daterangepicker/daterangepicker.js"></script>
-			<!--===============================================================================================-->
-			<script src="vendor/countdowntime/countdowntime.js"></script>
-			<!--===============================================================================================-->
-			<script src="js/main.js"></script>
 		</div>
 	</div>
+
+
+
+
+	<div id="dropDownSelect1"></div>
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
 
 </body>
 
