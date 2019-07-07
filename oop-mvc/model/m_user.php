@@ -1,5 +1,5 @@
 <?php
-include('model/database.php');
+include('/model/database.php');
 class M_user extends database
 {
 	function register($firstname, $lastname, $email, $password){
